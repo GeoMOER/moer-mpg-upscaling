@@ -74,15 +74,16 @@ The course encompassed 12 sessions from 16.10.2026 to 12.02.2027.
 | 06 | 20.11.2026   | Foundation models and Satellite embeddings       		|T.B.D|
 | 07 | 27.11.2026   | Hands on Alpha Earth Satellite embeddings        		|T.B.D|
 ||| **Start research project**  |
-| 08 | 04.12.2026   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
-||| **Upscaling Methodology**                                                    |	
-| 09 | 11.12.2026 | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-| 10 | 18.12.2026 | Upcaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-| 11 | 15.01.2027   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+| 08 | 04.12.2026   | Set up your research project      		        | Defining project work, research questions and discussing deadlines, open science and data |
+||| **Upscaling Methodology**                                                   |	
+| 09 | 11.12.2026 | Upscaling workflow 1                                        | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| 10 | 18.12.2026 | Upcaling workflow 2 	                            	| Designing a machine learning model, testing and fine tuning the model |
+||| **Christmas Break**                                                         |	
+| 11 | 15.01.2027   | Upscaling workflow 3	                            	| Upcaling : doing predictions |
 ||| **Assisted working phase** |
-| 12 | 22.01.2027   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
+| 12 | 22.01.2027   | Feedback on project outline and Work on projects 		| Discussion on project outlines and time for working on projects|
 ||| **Wrap up** |
-| 13 | 29.01.2027   | Work on your projects, Wrap up, Evaluation, and Feedback   | Time for questions and feedback, goodbye |
+| 13 | 29.01.2027   | Work on your projects, Wrap up, Evaluation, and Feedback  | Time for questions and feedback, goodbye |
 
 
 # Deliverables
