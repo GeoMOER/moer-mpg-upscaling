@@ -49,7 +49,7 @@ At the end of this course you should be able to
 # Setting
 
 This course will take place in a presence only setting in the physical classroom (**F 14 | 00A19**).
-Details on the course will be provided in the first session, which will take place **in presence only on Wednesday 17.04.2024 at 09:15 am**.
+Details on the course will be provided in the first session, which will take place **in presence only on Wednesday 16.10.2026 at 09:15 am**.
 The link to the course resourceas of the first session is provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"}
  (only accessible for members of the course who are logged-in into Ilias). 
 Please also seriously check and follow the [Information on the Coronavirus](https://www.uni-marburg.de/de/universitaet/administration/sicherheit/coronavirus){:target="_blank"} of the University of Marburg.
@@ -60,30 +60,29 @@ Please also seriously check and follow the [Information on the Coronavirus](http
 
 # Syllabus
 
-The course encompassed 12 sessions from 17.04.2024 to 17.07.2024.
+The course encompassed 12 sessions from 16.10.2026 to 12.02.2027.
 
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
-| 01 | 17.04.2024   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
+| 01 | 16.10.2026   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
 ||| **Remote sensing basics and data**  |
-| 02 | 24.04.2024   | Remote sensing basics and Sentinel-2 data                 | Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel 2 data preparation and application|
-|    | ~~01.05.2024~~|Holiday						        |Session cancelled|				
-| 03 | 08.05.2024   | Remote sensing basics and Sentinel-2 data                 | Session continued |
-|    | ~~15.05.2024~~|Sports dies						|Session cancelled|
-| 04 | 22.05.2024   | LiDAR remote sensing          	                        | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-    | ~~29.05.2024~~|Project week 						 |Session cancelled|
-| 05 | 05.06.2024   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
+| 02 | 23.10.2026   | Remote sensing basics and Sentinel-2 data                 | Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel 2 data preparation and application|
+| 03 | 30.10.2026   | Google earth engine-alpha earth                           | tbd |
+| 04 | 06.11.2026   | LiDAR remote sensing          	                        | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 05 | 13.11.2026   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
+| 06 | 20.11.2026   | Foundation models and Satellite embeddings       		|T.B.D|
+| 07 | 27.11.2026   | Hands on Alpha Earth Satellite embeddings        		|T.B.D|
 ||| **Start research project**  |
-| 06 | 12.06.2024   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
+| 08 | 04.12.2026   | Set up your research project      		         | Defining project work, research questions and discussing deadlines, open science and data |
 ||| **Upscaling Methodology**                                                    |	
-| 07 | 19.06.2024   | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-| 07 | 26.06.2024   | Upscaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
-| 08 | 03.07.2024   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
+| 09 | 11.12.2026 | Upscaling workflow 1                                       | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| 10 | 18.12.2026 | Upcaling workflow 2 	                            	 | Designing a machine learning model, testing and fine tuning the model |
+| 11 | 15.01.2027   | Upscaling workflow 3	                            	 | Upcaling : doing predictions |
 ||| **Assisted working phase** |
-| 09 | 10.06.2024   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
+| 12 | 22.01.2027   | Feedback on project outline and Work on projects 		 | Discussion on project outlines and time for working on projects|
 ||| **Wrap up** |
-| 10 | 17.07.2024   | Work on your projects, Wrap up, Evaluation, and Feedback   | Time for questions and feedback, goodbye |
+| 13 | 29.01.2027   | Work on your projects, Wrap up, Evaluation, and Feedback   | Time for questions and feedback, goodbye |
 
 
 # Deliverables
