@@ -1,4 +1,5 @@
 ---
+order: 3
 title: "Recall: Data Types"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"

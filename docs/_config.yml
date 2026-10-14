@@ -87,9 +87,9 @@ collections:
   unit07:
     output: true
     permalink: /:collection/:title.html
-#  unit08:
-#    output: true
-#    permalink: /:collection/:title.html
+  unit08:
+    output: true
+    permalink: /:collection/:title.html
 #  unit09:
 #    output: true
 #    permalink: /:collection/:title.html
@@ -168,27 +168,36 @@ defaults:
       layout: single
       sidebar:
         nav: "course_unit" 
-  # unit06
+    # unit06
   - scope:
       path: ""
       type: unit06
     values:
-      category: "06 Set up your research project"
+      category: "06 Foundation models and satellite embeddings"
       tags: "Unit 06"
       layout: single
       sidebar:
-        nav: "course_unit"      
+        nav: "course_unit"
   # unit07
   - scope:
       path: ""
       type: unit07
     values:
-      category: "07 Upscaling workflow"
+      category: "07 Set up your research project"
       tags: "Unit 07"
       layout: single
       sidebar:
-        nav: "course_unit"    
-
+        nav: "course_unit"
+  # unit08
+  - scope:
+      path: ""
+      type: unit08
+    values:
+      category: "08 Upscaling workflow"
+      tags: "Unit 08"
+      layout: single
+      sidebar:
+        nav: "course_unit"
   # pages
   - scope:
       path: "_pages"

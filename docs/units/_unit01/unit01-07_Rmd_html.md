@@ -1,4 +1,5 @@
 ---
+order: 7
 title: "Example: R Markdown with html output"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"

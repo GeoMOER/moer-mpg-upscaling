@@ -1,4 +1,5 @@
 ---
+order: 3
 title: "EX | Working with LiDAR data"
 header:
   image: "/assets/images/teaser/lidar_coffee.jpg"
@@ -15,11 +16,11 @@ Please refer [here](https://r-lidar.github.io/lidRbook/){:target="_blank"} to ge
 
 ## Downloading LiDAR point cloud data
 
-You can download the example point cloud data [here](http://85.214.102.111/kili_data/){:target="_blank"}
+You can download the example point cloud data [here](https://next.hessenbox.de/index.php/f/808342192){:target="_blank"}
 
 ## Input/Output, Clipping and Visualizing point clouds
 
-This following code shows you a simple input/output command and lidR::clip, which is similar to raster::crop and a simple 3D visualization.
+This following code shows you a simple input/output command and lidR::clip_roi(), which is similar to raster::crop and a simple 3D visualization.
 
 ```r
 # load the following libraries
@@ -63,7 +64,7 @@ rm(point_cloud) #removes larger point cloud and frees up our space
 gc() #garbage collector for cleaning the RAM
 
 # 3D visualization
-plot(flm1) #plotting las files will open a new window , you can move the data in 360 degress to notice the vegetation structure
+plot(flm1) #plotting las files will open a new window , you can move the data in 360 degrees to notice the vegetation structure
 
 #save the output
 writeLAS(flm1, "./data/flm1_clipped.las")

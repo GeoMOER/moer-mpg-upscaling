@@ -1,4 +1,5 @@
 ---
+order: 3
 title: LM | Google Earth Engine basics
 header:
   image: "/assets/images/teaser/ndvi.jpg"
@@ -97,9 +98,11 @@ var filteredCollection = sentinel_collection
 ```js
 var selectedBands = filteredCollection.select(['B4', 'B3', 'B2']);
 Map.addLayer(selectedBands.median(), {min: 0, max: 3000, bands: ['B4', 'B3', 'B2']}, 'RGB Composite'); 
-var medianComposite = sentinelCollection.median();
+var medianComposite = filteredCollection.median();
 // Display the composite
-Map.addLayer(medianComposite, {bands: ['B4', 'B3', 'B2'], max: 3000};
+Map.addLayer(medianComposite, {bands: ['B4', 'B3', 'B2'], max: 3000}, 'Median composite');
+
+
 ```
 * Exporting images
 ```js

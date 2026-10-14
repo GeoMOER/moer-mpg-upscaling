@@ -1,9 +1,9 @@
 ---
+order: 4
 title: "EX | Deriving LiDAR products"
 header:
   image: "/assets/images/teaser/lidar_coffee.jpg"
   caption: 'Image: [**Environmental Informatics Marburg**](https://www.uni-marburg.de/en/fb19/disciplines/physisch/environmentalinformatics){:target="_blank"}'
-  order: 3
 toc: true
 ---
 
@@ -12,7 +12,7 @@ toc: true
 In this exercise, we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model).
 
 <img src="lidarTree-height.png" width="1104" height="359" align="centre" vspace="10" hspace="20">
-<font size="-1">source: https://www.earthdatascience.org/images/courses/earth-analytics/lidar-raster-data-r</font>
+<font size="-1">source:[earthdatascience.org](https://www.earthdatascience.org/){:target="_blank"}
 
 ## Rasterizing the point cloud
 
@@ -44,7 +44,7 @@ plot(flm1_clipped, color = "Classification", size = 3, bg = "white")
 dtm_kriging <- rasterize_terrain(flm1_clipped, res = 10, algorithm = kriging(k = 40))
 plot_dtm3d(dtm_kriging, bg = "white") 
 
-#2. Invert distance weighing
+#2. Inverse distance weighing
 dtm_idw <- rasterize_terrain(flm1_clipped, res = 10, algorithm = knnidw(k = 10L, p = 2))
 plot_dtm3d(dtm_idw, bg = "white") 
 
@@ -62,9 +62,9 @@ We want to calculate what the mean vegetation height of our forest plot is.
 
 * Load the cropped Sentinel-2 scene from the previous session
 * Crop the scene for our forest plot
-* Calculate a DEM with the Sentinel tile as a grid template with pixel_metrics()
-* Normalize the point cloud with normalize_height(). What happened?
-* Calculate the mean vegetation height for each pixel
+* Calculate a DTM using the Sentinel-2 raster as a template: `rasterize_terrain(las, res = s2_raster, algorithm = tin())`
+* Normalize the point cloud with `normalize_height()`. What happened?
+* Calculate the mean vegetation height per pixel: `pixel_metrics(nlas, ~mean(Z), res = s2_raster)`
 * Save the mean vegetation height as a tif file
 * Plot the mean vegetation height as overlay to the forest Sentinel scene
 

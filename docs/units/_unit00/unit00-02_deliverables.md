@@ -1,4 +1,5 @@
 ---
+order: 2
 title: Deliverables
 header:
   image: '/assets/images/teaser/Kilikarte_CC_Tanzania_72dpi-1800x1386_7-1.jpg'
@@ -34,7 +35,7 @@ You need to submit your solutions to your personal repository in the GitHub clas
 | 11         | [MOHA](/moer-mpg-data-analysis/unit11/unit11-01_link-MOHA.html)                                  | marked             |
 
 
-The deadlines for uploading your assignment solutions -- both marked and unmarked -- to GitHub Classroom is 12:00 o'clock in the night between Monday and Tuesday before the next course session.
+The deadlines for uploading your assignment solutions -- both marked and unmarked -- to Classroom 50 is 12:00 o'clock in the night between Wednesday and Thursday before the next course session.
 {: .notice--info}
 
 Be aware that it will NOT be sufficient to start working on the assignments the day before the deadline.
@@ -47,8 +48,8 @@ So start early!!!
 
 ## Project work
 
-The page with the description of the project work can be found [here](https://geomoer.github.io/moer-mpg-upscaling/unit06/unit06-01_Overview.html){:target="_blank"}. The deadline to deliver the project outline is June 27,2024, 23:00.
-The deadline to deliver the final project work is August 13,2024, 23:00.
+The page with the description of the project work can be found [here](https://geomoer.github.io/moer-mpg-upscaling/unit07/unit07-01_Overview.html){:target="_blank"}. The deadline to deliver the project outline is January 18,2027, 23:00.
+The deadline to deliver the final project work is February 28,2027, 23:00.
 
 
 

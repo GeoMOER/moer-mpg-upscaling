@@ -1,4 +1,5 @@
 ---
+order: 2
 title: R and RStudio
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"

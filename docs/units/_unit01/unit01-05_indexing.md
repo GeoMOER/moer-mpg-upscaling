@@ -1,4 +1,5 @@
 ---
+order: 5
 title: "Recall: Indexing"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"

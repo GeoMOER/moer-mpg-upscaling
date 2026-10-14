@@ -1,4 +1,5 @@
 ---
+order: 2
 title: "LM | Upscaling workflow"
 header:
   image: "/assets/images/teaser/unit7.jpg"

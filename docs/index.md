@@ -21,76 +21,69 @@ feature_row_ilos:
 
 {% include feature_row id="feature_row_intro" type="center" %}
 
-Understanding complex forest structures through field data collection have been increasingly being complemented with remote sensing methods. However, many remote sensing methods work best at a particular scale.
-For example, Sentinel data can capture information to a very high resolution of 10m in 2D while LiDAR (Light Detection and Ranging) can most accurately explain forest structure in 3D.
-Joint use of remote sensing data from multiple sensors can help us capture the complex vegetation structure at both local and regional levels. Such an understanding can be helpful for forest conservation and biodiversity management. 
-This course will use pre-collected data on species richness and many environmental parameters like temperature, soil, etc. collected at plot level to upscale biodiversity to a regional scale. 
-
+Field data collection for understanding complex forest structures is increasingly being complemented by remote sensing methods. However, many remote sensing methods work best at a particular scale.
+For example, Sentinel-2 data captures information at a high resolution of 10 m in 2D, while LiDAR (Light Detection and Ranging) describes forest structure most accurately in 3D.
+Joint use of remote sensing data from multiple sensors can help us capture complex vegetation structure at both local and regional levels. Such an understanding can support forest conservation and biodiversity management.
+This course uses pre-collected data on species richness and environmental parameters such as temperature and soil, collected at plot level, to upscale biodiversity to a regional scale.
 
 # What will be done in the course 
-In this course, we will use airborne LiDAR and hyperspectral remote sensing data along with Sentinel data to upscale biodiversity measured at plot scales.
-The data used in this project is provided by the [Kilimanjaro-SES project](https://kili-ses.senckenberg.de/){:target="_blank"}.
-
+In this course, we will combine airborne LiDAR, hyperspectral and Sentinel-2 data with satellite embeddings from geospatial foundation models to upscale biodiversity measured at plot scale.
+The data used in this course is provided by the [Kilimanjaro-SES project](https://kili-ses.de/){:target="_blank"}.
 
 
 # Intended learning outcomes
 At the end of this course you should be able to
-  
-* Feel comfortable with the usage of R,
-* Know the basics of remote sensing theory and machine learning,
-* Handle LiDAR, hyperspectral and Sentinel data,
-* Use upscaling methods,
-* Include and process different types of remote sensing data in a single workflow, and
-* Apply all of the above to a real-world example.
 
-
+* Use R to process and analyse geospatial data,
+* Explain the basics of remote sensing and machine learning,
+* Process LiDAR, hyperspectral and Sentinel-2 data,
+* Explain what satellite embeddings are and use them as predictors,
+* Apply upscaling methods to predict biodiversity at regional scale,
+* Combine different types of remote sensing data in a single workflow, and
+* Design and carry out a reproducible research project on a real-world example.
 
 
 # Setting
 
-This course will take place in a presence only setting in the physical classroom (**F 14 | 00A19**).
-Details on the course will be provided in the first session, which will take place **in presence only on Friday 16.10.2026 at 09:15 am**.
-The link to the course resourceas of the first session is provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"}
- (only accessible for members of the course who are logged-in into Ilias). 
-Please also seriously check and follow the [Information on the Coronavirus](https://www.uni-marburg.de/de/universitaet/administration/sicherheit/coronavirus){:target="_blank"} of the University of Marburg.
+This course takes place in presence in the classroom (**F 14 | 00A19**).
+The first session will take place on **Friday 16.10.2026 at 09:15 am**, where all course details will be explained.
+Course resources are provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"} (only accessible to course members logged in to Ilias).
 {: .notice--info}
-
-
 
 
 # Syllabus
 
-The course encompassed 12 sessions from 16.10.2026 to 12.02.2027.
+The course encompasses 13 sessions from 16.10.2026 to 12.02.2027.
 
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
 | 01 | 16.10.2026   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
 ||| **Remote sensing basics and data**  |
-| 02 | 23.10.2026   | Remote sensing basics and Sentinel-2 data                 | Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel 2 data preparation and application|
-| 03 | 30.10.2026   | Google earth engine-alpha earth                           | tbd |
-| 04 | 06.11.2026   | LiDAR remote sensing          	                        | Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-| 05 | 13.11.2026   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
-| 06 | 20.11.2026   | Foundation models and Satellite embeddings       		|T.B.D|
-| 07 | 27.11.2026   | Hands on Alpha Earth Satellite embeddings        		|T.B.D|
+| 02 | 23.10.2026   | Remote sensing basics and Sentinel-2 data                 |Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel-2 data preparation and application|
+| 03 | 30.10.2026   | LiDAR remote sensing          	                        |Introduction to LiDAR, working with point clouds and deriving LiDAR products|
+| 04 | 06.11.2026   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
+| 05 | 13.11.2026 | Foundation models and satellite embeddings | What foundation models and embeddings are, AlphaEarth and TESSERA, embeddings vs. spectral bands and indices, limitations |
+| 06 | 20.11.2026 | Hands-on AlphaEarth satellite embeddings | Accessing AlphaEarth embeddings in Google Earth Engine, exploring and extracting them for the Kilimanjaro plots, comparison with classic predictors |
 ||| **Start research project**  |
-| 08 | 04.12.2026   | Set up your research project      		        | Defining project work, research questions and discussing deadlines, open science and data |
+| 07 | 27.11.2026   | Set up your research project      		        | Defining project work, research questions and discussing deadlines, open science and data |
 ||| **Upscaling Methodology**                                                   |	
-| 09 | 11.12.2026 | Upscaling workflow 1                                        | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
-| 10 | 18.12.2026 | Upcaling workflow 2 	                            	| Designing a machine learning model, testing and fine tuning the model |
-||| **Christmas Break**                                                         |	
-| 11 | 15.01.2027   | Upscaling workflow 3	                            	| Upcaling : doing predictions |
+| 08 | 04.12.2026 | Upscaling workflow 1                                        | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+||| **No sessions on 11.12. and 18.12.2026 – work on your project outline** |
+||| **Christmas Break**                                                         |
+| 09 | 15.01.2027 | Upscaling workflow 2 	                            	| Designing a machine learning model, testing and fine tuning the model |	
+| 10 | 22.01.2027 | Upscaling workflow 3	                            	| Upscaling : doing predictions |
 ||| **Assisted working phase** |
-| 12 | 22.01.2027   | Feedback on project outline and Work on projects 		| Discussion on project outlines and time for working on projects|
+| 11 | 29.01.2027   | Feedback on project outline and Work on projects 		| Discussion on project outlines and time for working on projects|
+| 12 | 05.02.2027   | Work on your projects                                     | Time for working on projects, individual feedback |
 ||| **Wrap up** |
-| 13 | 29.01.2027   | Work on your projects, Wrap up, Evaluation, and Feedback  | Time for questions and feedback, goodbye |
+| 13 | 12.02.2027   | Work on your projects, wrap up, evaluation, and feedback  | Time for questions and feedback, goodbye |
 
 
 # Deliverables
 
-The graded course certificate will be based on an individual portfolio hosted as a personal repository on GitHub. 
-The individual portfolio items are defined in the respective course assignments. 
-At the end of the course, a project work based on the individual assignments must be submitted, which will be marked.
+The graded course certificate is based on an individual portfolio hosted as a personal repository on GitHub.
+The portfolio items are defined in the respective course assignments.
 
 
 # Preparation and prerequisites

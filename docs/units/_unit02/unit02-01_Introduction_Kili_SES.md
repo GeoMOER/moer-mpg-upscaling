@@ -1,4 +1,5 @@
 ---
+order: 1
 title: Introduction to Kili SES
 header:
   image: "/assets/images/teaser/Kili_Hemp.jpg"
@@ -11,7 +12,7 @@ Get a brief introduction to the Kilimanjaro Social-Ecological System project fun
 
 
 ## Research Project
-The role of nature for human well-being in the Kilimanjaro Social-Ecological System. Learn more about the project [here](https://kili-ses.senckenberg.de/){:target="_blank"}.
+The role of nature for human well-being in the Kilimanjaro Social-Ecological System. Learn more about the project [here](https://kili-ses.de/){:target="_blank"}.
 
 
 

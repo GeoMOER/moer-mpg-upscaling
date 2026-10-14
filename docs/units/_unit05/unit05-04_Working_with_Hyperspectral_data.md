@@ -1,4 +1,5 @@
 ---
+order: 4
 title: "EX | Working with hyperspectral data in EnMap-Box"
 header:
   image: "/assets/images/teaser/hyp_crop.png"
@@ -97,7 +98,7 @@ Compare the spectral profiles between an aerial imagery vs an EnMap imagery.
 
 ## Task 2
 
-A few EnMap scenes are provided to you [here](http://85.214.102.111/kili_data/){:target="_blank"}. You can load files ending with "spectral_image_swir" or "spectral_image_vnir".
+A few EnMap scenes are provided to you [here](https://next.hessenbox.de/index.php/f/808342192){:target="_blank"}. You can load files ending with "spectral_image_swir" or "spectral_image_vnir".
 Along with this , a shapefile with 3 classes is given as well.
 
 To add a EnMAP product , use the following

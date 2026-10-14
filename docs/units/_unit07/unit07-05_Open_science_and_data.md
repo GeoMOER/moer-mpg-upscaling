@@ -1,4 +1,5 @@
 ---
+order: 5
 title: "Open science and data"
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"

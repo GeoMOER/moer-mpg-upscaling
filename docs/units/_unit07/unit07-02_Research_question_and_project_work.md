@@ -1,4 +1,5 @@
 ---
+order: 2
 title: "Research question and project"
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"

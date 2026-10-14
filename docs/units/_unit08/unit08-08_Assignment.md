@@ -1,4 +1,5 @@
 ---
+order: 8
 title: "Assignment"
 header:
   image: "/assets/images/teaser/unit7.jpg"

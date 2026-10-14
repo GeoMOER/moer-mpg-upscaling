@@ -1,4 +1,5 @@
 ---
+order: 3
 title: "EX | Sentinel-2 Preparation"
 header:
   image: "/assets/images/teaser/ndvi.jpg"
@@ -16,7 +17,7 @@ toc: true
 
 ## Data acquisition and first steps
 
-1. Download the buffered shapefile for Kilimanjaro southern slope [here](http://85.214.102.111/kili_data/){:target="_blank"}.We use the buffered area to avoid the error regarding "multiple geometries".
+1. Download the buffered shapefile for Kilimanjaro southern slope [here](https://next.hessenbox.de/index.php/f/808342192){:target="_blank"}. We use the buffered area to avoid the error regarding "multiple geometries".
 	* Once downloaded, open GEE code editor and head to "Assets", click on "New" and upload your shapefile with a suitable name (e.g. "study_area_kili") 
 	* Please ensure the file formats - ".shp", ".shx", ".dbf", ".prj" or "zip". The file format ".qmd" is not supported. 
 	* Once the shapefile is uploaded and available as an asset, you can proceed with the coding exercise.
@@ -25,7 +26,8 @@ toc: true
    
 ```js
 // Define the study area
-var studyArea = ee.FeatureCollection('projects/ee-netra805kili/assets/buffered_8000m_veg_aug1_kili_ses')
+var // Replace with the path of YOUR uploaded asset (see the Assets tab)
+var studyArea = ee.FeatureCollection('projects/YOUR-PROJECT/assets/study_area_kili');
 // Import Sentinel-2 data and filter by date and study area
 var startDate = '2022-01-13';
 var endDate = '2022-01-14'; // One day after the start date
@@ -65,9 +67,9 @@ Export.image.toDrive({
 
  * Next you will be prompted to save the image. Enter the following :
 	* Task name -  Sentinel2_FullBand_Image
-	* Coordinate reference system - EPSG32737
+	* Coordinate reference system - EPSG:32737
 	* Scale - 10
-	* Driver folder - write your folder name where you want to store it
+	* Drive folder - write your folder name where you want to store it
 	* Filename - Sentinel2_FullBand
 	* File format - GEO_TIFF
 

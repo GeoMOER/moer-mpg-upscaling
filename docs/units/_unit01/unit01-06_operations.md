@@ -1,4 +1,5 @@
 ---
+order: 6
 title: "Recall: Operations"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"

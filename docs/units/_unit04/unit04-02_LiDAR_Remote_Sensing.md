@@ -1,4 +1,5 @@
 ---
+order: 2
 title: "LM | LiDAR Remote Sensing"
 header:
   image: "/assets/images/teaser/lidar_coffee.jpg"

@@ -1,4 +1,5 @@
 ---
+order: 10
 title: "Assignment: Hello R, Hello GitHub"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"
@@ -12,8 +13,8 @@ Your submission will be pushed to your class repository at GitHub.
 After completion, you should have gained some experience in running R commands within scripts, R Markdown for running code and documentation within one file and Git/GitHub.
 
 ## Things you need for this worksheet
-  * [R](https://cran.r-project.org/){:target="_blank"} — the interpreter can be installed on any operation system.
-  * [RStudio](https://www.rstudio.com/){:target="_blank"} — we recommend to use RStudio for (interactive) programming with R.
+  * [R](https://cran.r-project.org/){:target="_blank"} — the interpreter can be installed on any operating system.
+  * [RStudio](https://posit.co/download/rstudio-desktop/){:target="_blank"} — we recommend to use RStudio for (interactive) programming with R.
   * [Git](https://git-scm.com/downloads){:target="_blank"} environment for your operating system. For Windows users with little experience on the command line, we recommend [GitHub Desktop](https://desktop.github.com/){:target="_blank"}.
 
 ## Hello R and GitHub submission
@@ -33,7 +34,7 @@ Please write an R script as an Rmd file with html output for the following task 
 
 Save your Rmd file in your course repository, knit it, update (i.e. commit) your local repository and publish (i.e. push) it to the GitHub classroom. Make sure that the created html file is also part of your GitHub classroom repository.
 
-As you might become aware by reading this assignment, there is a great chance that you have to gather considerable more information to actually solve the given assignment. More precisely, once you have solved the R programming task, you are not off the hook since you have to familiarize yourself with Git and GitHub to actually submit your solution.
+As you might become aware by reading this assignment, there is a great chance that you have to gather considerably more information to actually solve the given assignment. More precisely, once you have solved the R programming task, you are not off the hook since you have to familiarize yourself with Git and GitHub to actually submit your solution.
 {: .notice--warning}
 
 

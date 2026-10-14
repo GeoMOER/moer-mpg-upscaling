@@ -1,4 +1,5 @@
 ---
+order: 3
 title: "EX | Working with EnMap hyperspectral data"
 header:
   image: "/assets/images/teaser/hyp_crop.png"
@@ -52,4 +53,4 @@ Image: EnMAP cart.
 
 - Next you will recieve a summary of your order and in 1-2 working days your data will be released to your email for download. Please read the email carefully to understand the download instructions (not shown here).
 
-Please note- for the ease of analysis, the data will be provided to you in the strato server. 
+Please note- for the ease of analysis, the data will be provided to you in the [next hessen box](https://next.hessenbox.de/index.php/f/808342192){:target="_blank"}. 

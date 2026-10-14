@@ -1,4 +1,5 @@
 ---
+order: 4
 title: "EX | Sentinel-2 Application"
 header:
   image: "/assets/images/teaser/ndvi.jpg"
@@ -73,10 +74,10 @@ library(RStoolbox)
 #if you notice, images downloaded from GEE are in 4 chunks 
 # so we need to first load them and merge
 
-s2_df = list.files(path = getwd(), pattern = "jan_2022.+.tif")# gives you a list of the images
+s2_files <- list.files(path = getwd(), pattern = "^Sentinel2_FullBand.*\\.tif$", full.names = TRUE)
+mergedRaster <- terra::merge(terra::sprc(s2_files))
 
-mergedRaster <- merge(rast(s2_df[1]), rast(s2_df[2]), rast(s2_df[3]), rast(s2_df[4])) #merges the four chunks
-plot(mergedRaster) #make a note of the individual band nomenaclature 
+plot(mergedRaster) #make a note of the individual band nomenclature 
 names(mergedRaster) 
 
 
@@ -104,6 +105,6 @@ plot(Index_layer)
 * How easy or difficult is it to separate "agricultural" and "forest" regions just by visualization?
 
 ## Further reading resources 
-[Fortunata and Zeuss 2020](https://link.springer.com/chapter/10.1007/978-3-030-76374-9_3){:target="_blank"} (also available on ILIAS)
+[Msoffe and Zeuss 2020](https://link.springer.com/chapter/10.1007/978-3-030-76374-9_3){:target="_blank"} (also available on ILIAS)
 
  

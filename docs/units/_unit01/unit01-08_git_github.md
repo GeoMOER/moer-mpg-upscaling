@@ -1,4 +1,5 @@
 ---
+order: 8
 title: Git and GitHub
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"

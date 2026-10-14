@@ -1,4 +1,5 @@
 ---
+order: 7
 title: "EX | Upscaling"
 header:
   image: "/assets/images/teaser/unit7.jpg"

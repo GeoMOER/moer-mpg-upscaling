@@ -1,30 +1,18 @@
 ---
+order: 1
 title: Overview
 header:
-  image: "/assets/images/teaser/writing-a-research-plan.jpg"
-  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan){:target="_blank"}'
+  image: "/assets/images/title/land_use_map_Kili.png"
+  caption: 'Image: [Andreas Hemp (2006)](https://doi.org/10.1111/j.1365-2028.2006.00679.x){:target="_blank"}'
 toc: true
 ---
 
-This unit is all about your final research project. Think about your research question and create a project outline as basis for your project.
-To finish this course, it is mandatory to submit the final project.
+Geospatial foundation models turn years of satellite observations into compact "embeddings" that summarise each location. In this unit, you will learn what embeddings are and how to use them as predictors for upscaling biodiversity.
 
 <!--more-->
 
+
 ## Learning objectives
 
-* develop a research question
-* plan and realize a research project from scratch, and
-* present your project in an appropriate format.
+Content coming soon.
 
-## Comments
-
-You can leave comments under this Issue if you have questions or remarks about the task/assignment. 
-
-<script src="https://utteranc.es/client.js"
-        repo="GeoMOER/moer-mpg-upscaling"
-        issue-term="moer-mpg-upscaling-unit07-Project_outline"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

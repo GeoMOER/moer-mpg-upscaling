@@ -1,4 +1,5 @@
 ---
+order: 4
 title: "Final project"
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"

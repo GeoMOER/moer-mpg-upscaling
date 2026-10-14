@@ -1,4 +1,5 @@
 ---
+order: 3
 title: "Project outline"
 header:
   image: "/assets/images/teaser/writing-a-research-plan.jpg"
@@ -36,7 +37,7 @@ Sentinel data will be needed to upscale your plot level data to the landscape sc
 
 ##  LiDAR and Hyperspectral data
 
-You can use them to relate your selected species data with structural and spectral remote sensing data. This data is available on strato.
+You can use them to relate your selected species data with structural and spectral remote sensing data. This data is available on hessenbox.
 
 ## Published datasets of Kilimanjaro region
 

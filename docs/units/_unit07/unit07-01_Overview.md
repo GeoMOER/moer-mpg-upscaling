@@ -1,26 +1,22 @@
 ---
+order: 1
 title: Overview
 header:
-  image: "/assets/images/teaser/unit7.jpg"
-  caption: 'Image: [**WHC UNESCO**](https://whc.unesco.org/en/list/403/){:target="_blank"}'
+  image: "/assets/images/teaser/writing-a-research-plan.jpg"
+  caption: 'Image: [**Science**](https://www.science.org/content/article/writing-research-plan){:target="_blank"}'
 toc: true
 ---
 
-This unit is about learning the essentials of upscaling using machine learning. In machine learning, algorithms are used to fit a model to a dataset through training or learning. 
-In this unit, we will explore such models and understand the different steps of upscaling.
+This unit is all about your final research project. Think about your research question and create a project outline as basis for your project.
+To finish this course, it is mandatory to submit the final project.
 
 <!--more-->
 
 ## Learning objectives
 
-* understand the basics of upscaling workflow
-* revise basics of machine learning
-* prepare data for the model
-* train the model
-* make predictions
-* fine tune the model
-* validate your model
-* understand the results
+* develop a research question
+* plan and realize a research project from scratch, and
+* present your project in an appropriate format.
 
 ## Comments
 
@@ -28,7 +24,7 @@ You can leave comments under this Issue if you have questions or remarks about t
 
 <script src="https://utteranc.es/client.js"
         repo="GeoMOER/moer-mpg-upscaling"
-        issue-term="moer-mpg-upscaling-unit08-upscaling"
+        issue-term="moer-mpg-upscaling-unit07-Project_outline"
         theme="github-light"
         crossorigin="anonymous"
         async>
