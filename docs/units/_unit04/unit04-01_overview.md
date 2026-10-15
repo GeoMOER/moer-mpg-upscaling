@@ -7,7 +7,7 @@ header:
 toc: true
 ---
 
-LiDAR or Light Detection And Ranging is a very promising remote sensing method that uses lasers to record distances which when combined with complimentary data, can be used to generate 3D models of a surface. With its 3D approach, we can measure canopy height and density along with many environmental parameters. In remote areas as well as areas with steep slopes, airborne LiDAR has proved to be very effective in monitoring vegetation structure (Getzin et al 2017). In this unit, we explore the potential of airborne LiDAR data to understand the forest structure and derive different LiDAR metrics useful for upscaling. 
+LiDAR, or Light Detection and Ranging, is a remote sensing method that uses lasers to measure distances. Combined with complementary data, these measurements can generate 3D models of a surface. This 3D approach can measure canopy height and density along with many environmental parameters. In remote areas and areas with steep slopes, airborne LiDAR has proved effective in monitoring vegetation structure (Getzin et al. 2017). In this unit, we explore the potential of airborne LiDAR data to understand forest structure and derive LiDAR metrics useful for upscaling.
 
 <!--more-->
 
@@ -29,4 +29,3 @@ You can leave comments below if you have questions or remarks about any of the t
         crossorigin="anonymous" 
         async> 
 </script> 
-  

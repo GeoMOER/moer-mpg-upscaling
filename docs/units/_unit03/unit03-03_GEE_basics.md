@@ -7,7 +7,7 @@ header:
 toc: true
 ---
 
-Learn the essentials of Google Earth Engine, Earth Engine Data Catalog and java scripting
+Learn the essentials of Google Earth Engine, the Earth Engine Data Catalog, and JavaScript.
 <!--more-->
 
 
@@ -15,7 +15,7 @@ Learn the essentials of Google Earth Engine, Earth Engine Data Catalog and java 
 [Google Earth Engine](https://earthengine.google.com/){:target="_blank"} is a powerful platform designed for analyzing and visualizing environmental data. 
 Imagine you have a supercomputer that can access a huge library of satellite images of Earth taken over the last few decades. This is what Google Earth Engine provides.
 
-## Why GEE is relevant to us?
+## Why is GEE relevant to us?
 
 **Massive Satellite Imagery Database:** Google Earth Engine has a vast collection of satellite images. This database is constantly updated and includes historical data, which is great for observing changes over time.
 
@@ -31,7 +31,7 @@ Imagine you have a supercomputer that can access a huge library of satellite ima
 
 ## Introduction to the GEE code editor
 
-Once you have signed up for an account with GGE, you can now start playing around with satellite data using the [GEE code editor](https://code.earthengine.google.com/){:target="_blank"}. The code editor is a web-based integrated development environment (IDE) for writing and executing JavaScript code for Earth Engine.
+Once you have signed up for a GEE account, you can start exploring satellite data using the [GEE Code Editor](https://code.earthengine.google.com/){:target="_blank"}. The Code Editor is a web-based integrated development environment (IDE) for writing and executing JavaScript code for Earth Engine.
 A very well documented guide for working with GEE can be found [here](https://developers.google.com/earth-engine/guides){:target="_blank"}
 
 <img src="Code_editor_diagram.png" width="1280" height="755" align="centre" vspace="10" hspace="20">
@@ -49,10 +49,9 @@ The EE data catalog provides a large variety of [datasets](https://developers.go
 <i>Image: [Example from the catalog dataset showing script to access Sentinel-2 data](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED){:target="_blank"}</i>
 
 
-## JavaScripting with GEE
+## JavaScript in GEE
 To get started with GEE we need to first learn some basics of JavaScript. 
 Following are a few necessary functions we will need, but explore [here](https://developers.google.com/earth-engine/tutorials/tutorial_js_01){:target="_blank"} for further functions.
- 
 * Variables: to store data values.
 ```js
 var city = "Moshi"
@@ -121,4 +120,3 @@ Export.image.toDrive({
 });
 ```
 
- 

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Upscaling Biodiversity — Kilimanjaro contours</title>
+  <rect width="64" height="64" rx="14" fill="#183e35"/>
+  <path d="M6 36 11 21 24 10 39 7 53 17 59 32 54 48 40 57 23 56 10 47Z" fill="#c3a34f"/>
+  <path d="M10 35 16 23 26 15 39 12 50 20 54 32 49 45 38 52 24 50 15 44Z" fill="#43894b"/>
+  <path d="M16 34 21 25 29 19 39 18 46 24 49 33 43 43 33 47 23 43Z" fill="#17634c"/>
+  <path d="M21 33 25 26 33 23 40 24 44 31 41 39 33 42 26 39Z" fill="#55b8bb"/>
+  <path d="M26 32 29 27 35 26 40 30 39 36 33 38 28 36Z" fill="#7e7daa"/>
+  <path d="M29 32 32 29 36 30 37 33 34 35 31 35Z" fill="#f4f1e7"/>
+  <path d="M10 35 16 23 26 15 39 12 50 20 54 32 49 45 38 52 24 50 15 44Z" fill="none" stroke="#e6e9ce" stroke-opacity=".7" stroke-width="1.25" stroke-linejoin="round"/>
+</svg>

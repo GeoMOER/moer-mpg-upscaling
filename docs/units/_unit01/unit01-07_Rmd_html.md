@@ -3,7 +3,7 @@ order: 7
 title: "Example: R Markdown with html output"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"
-  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r){:target="_blank"}'
+  caption: 'Image: [**InfoWorld from IDG**](https://www.infoworld.com/article/2262286/do-more-with-r-video-tutorials.html){:target="_blank"}'
 toc: true
 toc_label: In this example
 ---
@@ -38,7 +38,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![]({{ site.baseurl }}/assets/images/rmd_images/rmd_html_out/unnamed-chunk-2-1.png)<!-- -->
+![Scatterplot of speed and stopping distance in the cars dataset]({{ site.baseurl }}/assets/images/rmd_images/rmd_html_out/unnamed-chunk-2-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot (see below).
 
@@ -77,7 +77,9 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![]({{ site.baseurl }}/assets/images/rmd_images/rmd_html_out/unnamed-chunk-2-1.png)<!-- -->
+```{r echo=FALSE}
+plot(cars)
+```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot (see below).
 

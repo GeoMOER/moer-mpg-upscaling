@@ -155,7 +155,7 @@ The result of the `aoa()` function has two layers: the dissimilarity index (DI) 
 
 In our result, we see that most areas are having low DI values along with AOA of 1. 
 
-## Overlapping preditcions with AOA
+## Overlapping predictions with AOA
 
 ```r
 library(latticeExtra)

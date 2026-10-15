@@ -115,7 +115,7 @@ featuresTrain <- model_data[split_indices$train, ]
 featuresTest <- model_data[split_indices$test, ]
 
 ```
-Now lets understand the model arguments once again.
+Now let's review the model arguments.
 
 ### Random Forest Model in caret
 The Random Forest algorithm is an ensemble learning method that builds multiple decision trees and merges them together to get a more accurate and stable prediction. 
@@ -262,7 +262,7 @@ RMSE (16.52): Indicates the average error in our predictions.
 R-squared (0.303): Tells us that about 30.3% of the variance in the actual data is explained by our model.
 MAE (11.20): Shows the average magnitude of the errors in our predictions.
 
-## Now lets see if we can improve our results
+## Now let's see if we can improve our results
 
 ## Task 1
 

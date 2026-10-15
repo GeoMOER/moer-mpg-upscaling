@@ -1,4 +1,4 @@
-# moer-mpg-upsacling
+# moer-mpg-upscaling
 Master level course in Physical Geography at the University of Marburg.
 
 The HTML page of this repository can be found here: https://geomoer.github.io/moer-mpg-upscaling/

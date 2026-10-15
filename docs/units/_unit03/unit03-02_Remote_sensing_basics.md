@@ -12,10 +12,10 @@ Learn the essentials of Remote Sensing and get hands-on experience in working wi
 
 
 ## Introduction to Remote Sensing 
-The online resources for this unit can be found [here](https://geomoer.github.io/geoAI//unit02/unit02-00_overview.html){:target="_blank"}.
+The online resources for this unit can be found [here](https://geomoer.github.io/geoAI/unit02/unit02-00_overview.html){:target="_blank"}.
 
 ## Introduction to Sentinel-2
-The online resources for this unit can be found [here](https://geomoer.github.io/moer-bsc-project-seminar-remote-sensing//unit04/unit04-05_sentinel.html){:target="_blank"}.
+The online resources for this unit can be found [here](https://geomoer.github.io/moer-bsc-project-seminar-remote-sensing/unit04/unit04-05_sentinel.html){:target="_blank"}.
 
 
 ## Questions

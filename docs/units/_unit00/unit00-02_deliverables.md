@@ -48,8 +48,8 @@ So start early!!!
 
 ## Project work
 
-The page with the description of the project work can be found [here](https://geomoer.github.io/moer-mpg-upscaling/unit07/unit07-01_Overview.html){:target="_blank"}. The deadline to deliver the project outline is January 18,2027, 23:00.
-The deadline to deliver the final project work is February 28,2027, 23:00.
+The [project work description](/moer-mpg-upscaling/unit07/unit07-01_Overview.html) explains the final project. You may work alone or in a group of up to three people.
+Submit your project outline by 18 January 2027 at 23:00 and your final project by 28 February 2027 at 23:00.
 
 
 

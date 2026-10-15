@@ -13,7 +13,7 @@ Learn and recall the essentials of Remote Sensing.
 ## Learning objectives
 
 * Recall the basics in remote sensing
-* Learn about Google earth engine, java scripting, and GEE Data Catalog
+* Learn about Google Earth Engine, JavaScript, and the Earth Engine Data Catalog
 * Sentinel-2 satellite basics and terminology
 * Know how to acquire Sentinel-2 data
 * Extend your experiences in working with Sentinel-2 data 

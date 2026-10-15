@@ -49,7 +49,7 @@ Image: [Govender et al 2007](https://www.mdpi.com/2072-4292/9/11/1110#){:target=
 
 <table>
 <tr>
-    <th style="background-color: lightgrey">Mutispectral </th>
+    <th style="background-color: lightgrey">Multispectral</th>
     <th style="background-color: lightgrey">Hyperspectral</th>
 </tr>
   <tr>
@@ -81,7 +81,7 @@ Listen to an expert!
 
 #### EnMAP
 
-Environmental Mapping and Analysis Program (EnMap) is the latest released optical earth remote sensing mission in orbit by the DLR, Germany. 
+The Environmental Mapping and Analysis Program (EnMAP) is a German optical Earth observation mission operated by DLR.
 It aims to acquire high-quality hyperspectral image data with 230 spectral channels in the solar-reflectance range on a frequent basis with high geometric resolution. The satellite will measure, derive, and analyze different parameters related to agriculture, forestry, soil, and geological environments, as well as coastal zones and inland waters. Furthermore, it will also provide a snapshot of different ecosystems and their response to natural or man-made changes in the environment. It has a spatial resolution of 30m.
 
 <img src="Enmap.jpg" width="570" height="313" align="centre" vspace="10" hspace="20">
@@ -120,5 +120,5 @@ Read more about AVIRIS [here](https://aviris.jpl.nasa.gov/){:target="_blank"}.
 
 #### Other common hyperspectral imagers 
 * [PRISMA](https://earth.esa.int/web/eoportal/satellite-missions/p/prisma-hyperspectral){:target="_blank"}
-* [HICO](https://www.nasa.gov/mission_pages/station/research/benefits/hico/){:target="_blank"}
+* [HICO](https://www.nasa.gov/news-release/space-station-ocean-imager-available-to-more-scientists/){:target="_blank"}
 * [CORAL](https://airbornescience.jpl.nasa.gov/campaign/coral){:target="_blank"}

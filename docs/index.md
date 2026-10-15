@@ -45,8 +45,8 @@ At the end of this course you should be able to
 
 # Setting
 
-This course takes place in presence in the classroom (**F 14 | 00A19**).
-The first session will take place on **Friday 16.10.2026 at 09:15 am**, where all course details will be explained.
+This course takes place in person in the classroom (**F 14 | 00A19**).
+The first session will take place on **Friday 16.10.2026 at 09:15 am**. The instructors will explain the course details then.
 Course resources are provided in the [ILIAS course environment](https://ilias.uni-marburg.de/goto.php/crs/4717441){:target="_blank"} (only accessible to course members logged in to ILIAS).
 {: .notice--info}
 

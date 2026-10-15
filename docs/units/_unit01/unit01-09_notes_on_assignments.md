@@ -3,7 +3,7 @@ order: 9
 title: "Assignments and GitHub"
 header:
   image: "/assets/images/teaser/Rteaser.jpeg"
-  caption: 'Image: [**Infoworld from IDG**](https://www.infoworld.com/video/series/8563/do-more-with-r){:target="_blank"}'
+  caption: 'Image: [**InfoWorld from IDG**](https://www.infoworld.com/article/2262286/do-more-with-r-video-tutorials.html){:target="_blank"}'
 toc: true
 toc_label: In this info
 ---

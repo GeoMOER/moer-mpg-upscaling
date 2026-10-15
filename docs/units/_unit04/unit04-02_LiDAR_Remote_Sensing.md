@@ -10,7 +10,7 @@ toc: true
 ## Dive into the world of 3D spatial data
 
 LiDAR or Light Detection and Ranging is an active remote sensing technique that uses laser to produce and emit pulses of light and then measures the time of return of this pulse reflected back from the surface.
-In general, a LiDAR system consits of a laser-emitter-reciever-scanner along with GPS (Global Positioning Unit) and an IMU (Inertial Measurement Unit). These three devices are mounted and carried on fixed wing aircraft (for Airborne Laser Scanning or ALS).
+In general, a LiDAR system consists of a laser emitter, receiver, and scanner, along with GPS (Global Positioning System) and an IMU (Inertial Measurement Unit). These components are mounted on a fixed-wing aircraft for airborne laser scanning (ALS).
 Terrestrial Laser Scanning (TLS) system is the ground-based counterpart of ALS while Satellite Laser Scanning is the spaceborne counterpart of ALS. 
 
 ## How are LiDAR data collected 

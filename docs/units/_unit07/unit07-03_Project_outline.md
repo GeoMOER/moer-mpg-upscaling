@@ -18,7 +18,7 @@ The project outline should include
 * the authors,
 * an introduction outlining the state of the art, research need and relevance of the expected results in the context of your research question,
 * a data section describing the intended data you are planning to use,
-* a method section with details on the methods you plan to apply on your data for getting an answer to you research question,
+* a methods section detailing how you plan to analyze your data to answer your research question,
 * a discussion section, where you discuss the implications, conclusions, potential limitations and improvements, picking up the story you created in the introduction,
 * a timetable with important work packages and milestones you aim to work on for reaching the project goal, and
 * references on relevant scientific papers, which have been published in the context of your research question.
@@ -27,7 +27,7 @@ The project outline should include
 
 ## Getting data
 
-After identifying the research question, a critical step is to find or create appropriate data sets for your modeling workflow. We will provide you with datasets from [Kilimanjaro project](http://85.214.102.111/kili_data/){:target="_blank"}.
+After identifying your research question, find or create appropriate datasets for your modeling workflow. Course data from the Kilimanjaro project are provided through [Hessenbox](https://next.hessenbox.de/index.php/f/808342192){:target="_blank"}.
 
 Some data source suggestions are:
 
@@ -41,7 +41,7 @@ You can use them to relate your selected species data with structural and spectr
 
 ## Published datasets of Kilimanjaro region
 
-[GFBio](https://www.gfbio.org/){:target="_blank"} and [Pangea](https://www.pangaea.de/){:target="_blank"} is an excellent source to search what studies have been done in the Kilimanjaro region and accees different datasets. 
+[GFBio](https://www.gfbio.org/){:target="_blank"} and [PANGAEA](https://www.pangaea.de/){:target="_blank"} are useful sources for finding studies and datasets from the Kilimanjaro region.
 Use 'KiLi: Kilimanjaro Research Group' as a search term to get an overview of all published datasets.
 
 ## Other sources
@@ -53,5 +53,5 @@ If you wish to understand the influence of other environmental variables you can
 Write your outline, therefore
 1. identify your research topic, 
 2. follow the steps mentioned above, and
-3. upload your pdf until 27 June 2024 23:59 on ILIAS.
+3. upload your PDF to ILIAS by 18 January 2027 at 23:00.
 {: .notice--info}

@@ -13,9 +13,8 @@ This is a continuously updated collection of frequently asked questions.
 ## Course requirements
 
 ### What is the expected workload for this course?
-This course gives 6 (ECTS) credit points, making up a total of 180 hours workload.
-180 hours in total minus the time spend during the course sessions divided by the number of weeks 
-makes up a workload of about 9.6 hours on average per week in addition to the time spent during the course sessions ((180-(13*3.5))/14). 
+This course gives 6 ECTS credits, corresponding to a total workload of 180 hours.
+After subtracting 13 course sessions of 3.5 hours each, the remaining workload is about 9.6 hours per week over 14 weeks: (180 - 13 × 3.5) / 14.
 Note that this workload is intended to achieve an average grade according to the official European study system.
 
 

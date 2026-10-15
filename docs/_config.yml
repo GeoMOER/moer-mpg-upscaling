@@ -31,8 +31,8 @@ title: Upscaling Biodiversity
 name: &name "Lab of Environmental Informatics" # &name is a YAML anchor which can be *referenced later
 email: zeussd@uni-marburg.de
 description: >- # this means to ignore newlines until next item
-  course course-materials geography remote-sensing marburg-open-educational-resource 
-  physical-geography environmental-science nature-conservation r
+  course-materials geography remote-sensing marburg-open-educational-resource
+  physical-geography environmental-science nature-conservation
 
 ##### Social Sharing ##########################################################
 twitter:
@@ -218,15 +218,16 @@ plugins:
   - jekyll-include-cache
   - jekyll-algolia
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude unused theme examples and archived drafts from the published site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _pages/home.md
+  - _pages/splash_page.md
+  - old_sentinel_text/
 
