@@ -10,13 +10,13 @@ toc: true
    Go through a brute force introduction into R, R Markdown, the RStudio IDE, version management with Git and Classroom 50 to get ready for solving the upcoming assignment problems and submitting your solutions.
    <!--more-->
 
-   Your repository will be set up by the course instructors in Classroom 50. Please share your GitHub username with us so we can add you.
+   Your instructors must add your GitHub account to the course roster. Then follow the [Classroom 50 setup steps](/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html#classroom-50-and-github) to create your course repository.
 
 ## Learning objectives
 At the end of this unit you should be able to
 * tell the difference between an R and an R Markdown script,
 * create an R and R markdown script and run and compile it respectively,
-* clone your Classroom 50 repository to your computer and push changes back to GitHub,
+* complete the Classroom 50 setup steps, clone your course repository to your computer and push changes back to GitHub,
 * put an R markdown (or any other) file into your Git repository, commit it locally and push it to the server.
 
 ## Why data analysis, why R

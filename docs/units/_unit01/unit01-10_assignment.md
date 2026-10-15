@@ -9,8 +9,10 @@ toc_label: In this worksheet
 ---
 
 This worksheet introduces you to R, R scripts and R Markdown. 
-Your submission will be pushed to your class repository at GitHub. 
+Your submission will be pushed to your course repository on GitHub.
 After completion, you should have gained some experience in running R commands within scripts, R Markdown for running code and documentation within one file and Git/GitHub.
+
+Before submitting, follow the [Classroom 50 setup steps](/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html#classroom-50-and-github) to create your personal course repository.
 
 ## Things you need for this worksheet
   * [R](https://cran.r-project.org/){:target="_blank"} — the interpreter can be installed on any operating system.
@@ -32,7 +34,7 @@ Please write an R script as an Rmd file with html output for the following task 
 1. Show the entire content of `df`.
 1. Show just the entry of the cell in the second row and first column.
 
-Save your Rmd file in your course repository, knit it, update (i.e. commit) your local repository and publish (i.e. push) it to the GitHub classroom. Make sure that the created html file is also part of your GitHub classroom repository.
+Save your Rmd file in your course repository and knit it to HTML. Commit both the Rmd source and the generated HTML file, then push your changes to GitHub. Check that both files are present in your course repository on GitHub.
 
 As you might become aware by reading this assignment, there is a great chance that you have to gather considerably more information to actually solve the given assignment. More precisely, once you have solved the R programming task, you are not off the hook since you have to familiarize yourself with Git and GitHub to actually submit your solution.
 {: .notice--warning}

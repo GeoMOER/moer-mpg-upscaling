@@ -47,7 +47,7 @@ At the end of this course you should be able to
 
 This course takes place in presence in the classroom (**F 14 | 00A19**).
 The first session will take place on **Friday 16.10.2026 at 09:15 am**, where all course details will be explained.
-Course resources are provided in the [Ilias course environment](https://ilias.uni-marburg.de/goto.php?target=crs_2785662&client_id=UNIMR){:target="_blank"} (only accessible to course members logged in to Ilias).
+Course resources are provided in the [ILIAS course environment](https://ilias.uni-marburg.de/goto.php/crs/4717441){:target="_blank"} (only accessible to course members logged in to ILIAS).
 {: .notice--info}
 
 
@@ -58,7 +58,7 @@ The course encompasses 13 sessions from 16.10.2026 to 12.02.2027.
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
-| 01 | 16.10.2026   | First things first                                        | Course introduction, R Basics, GitHub, GitHub classroom |
+| 01 | 16.10.2026   | First things first                                        | Course introduction, R Basics, GitHub, Classroom 50 |
 ||| **Remote sensing basics and data**  |
 | 02 | 23.10.2026   | Remote sensing basics and Sentinel-2 data                 |Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel-2 data preparation and application|
 | 03 | 30.10.2026   | LiDAR remote sensing          	                        |Introduction to LiDAR, working with point clouds and deriving LiDAR products|
@@ -84,6 +84,7 @@ The course encompasses 13 sessions from 16.10.2026 to 12.02.2027.
 
 The graded course certificate is based on an individual portfolio hosted as a personal repository on GitHub.
 The portfolio items are defined in the respective course assignments.
+To create your repository, follow the [Classroom 50 setup steps](/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html#classroom-50-and-github). Use the same repository for all assignments.
 
 
 # Preparation and prerequisites

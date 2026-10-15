@@ -43,16 +43,25 @@ Additionally, there are student meeting rooms in our course environment in ILIAS
 
 ILIAS is the course space offered by the University of Marburg. 
 We will use ILIAS mainly for the administration of the course and for providing small static documents.
-The link to the ILIAS space for this course can be found [here](https://ilias.uni-marburg.de/ilias.php?baseClass=ilrepositorygui&cmdNode=yx:nf&cmdClass=ilobjcoursegui&ref_id=4717441&item_ref_id=0){:target="_blank"}.
+The link to the ILIAS space for this course can be found [here](https://ilias.uni-marburg.de/goto.php/crs/4717441){:target="_blank"}.
 Note that you have to log in with your student account. 
 There is also a forum in ILIAS, which you can use for getting in touch with your fellow students.
 
 
-## Classroom 50
+## Classroom 50 and GitHub
 
-You will use Classroom 50 for uploading your assignments and for getting familiar with git.
-The link for joining our Classroom 50 can be found in ILIAS.
-Please add your full name or your student account name to your GitHub profile.
+Use Classroom 50 to create one personal GitHub repository for all your course assignments. You will practice Git as you work and keep using the same repository throughout the course.
+
+Your instructors must first add you to the course roster. Sign in to Classroom 50 with the GitHub account registered for the course. The invitation links do not add you to the roster automatically. If you see **Not a member yet**, contact your instructors with your GitHub username.
+
+Find both Classroom 50 invitation links in the [ILIAS course space](https://ilias.uni-marburg.de/goto.php/crs/4717441). Use them in this order:
+
+1. Open the classroom onboarding link. If you are not yet a member of **GeoMOER-Students-Space**, accept the invitation to join the GitHub organization.
+2. Open the course repository assignment link to create your personal repository. Complete step 1 before step 2.
+
+After step 2, open **My submission** in Classroom 50 and follow the link to your repository on GitHub. Copy its URL from the **Code** menu when you clone the repository to your computer. You do not need to accept a new Classroom 50 assignment each week.
+
+Please add your full name or your student account name to your GitHub profile. This makes it easier for the course instructors to match your assignments to you.
 
 ## Hessenbox
 

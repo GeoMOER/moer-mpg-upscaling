@@ -14,8 +14,8 @@ and at the end a marked project work as part of your overall course portfolio ("
 ## Assignments
 
 
-The submissions generally encompass R or R markdown AND the compiled html files. 
-You need to submit your solutions to your personal repository in the GitHub classroom.
+The submissions generally encompass R or R Markdown source files and the rendered HTML files.
+Submit your solutions to your personal course repository on GitHub. If you have not created it yet, follow the [Classroom 50 setup steps](/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html#classroom-50-and-github) first.
 
 
 <!--

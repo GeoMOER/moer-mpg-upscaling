@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Deliverables",
-        "excerpt":"You need to deliver unmarked assignments (“Studienleistung”) during the course and at the end a marked project work as part of your overall course portfolio (“Prüfungsleistung”). Assignments The submissions generally encompass R or R markdown AND the compiled html files. You need to submit your solutions to your personal repository...","categories": ["How-to Upscaling"],
+        "excerpt":"You need to deliver unmarked assignments (“Studienleistung”) during the course and at the end a marked project work as part of your overall course portfolio (“Prüfungsleistung”). Assignments The submissions generally encompass R or R Markdown source files and the rendered HTML files. Submit your solutions to your personal course repository...","categories": ["How-to Upscaling"],
         "tags": ["Unit","00"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit00/unit00-02_deliverables.html",
         "teaser": null
@@ -18,7 +18,7 @@ var store = [{
         "teaser": null
       },{
         "title": "First Things First",
-        "excerpt":"Go through a brute force introduction into R, R Markdown, the RStudio IDE, version management with Git and Classroom 50 to get ready for solving the upcoming assignment problems and submitting your solutions. Your repository will be set up by the course instructors in Classroom 50. Please share your GitHub...","categories": ["01 Getting started"],
+        "excerpt":"Go through a brute force introduction into R, R Markdown, the RStudio IDE, version management with Git and Classroom 50 to get ready for solving the upcoming assignment problems and submitting your solutions. Your instructors must add your GitHub account to the course roster. Then follow the Classroom 50 setup...","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-01_first_things_first.html",
         "teaser": null
@@ -66,13 +66,13 @@ var store = [{
         "teaser": null
       },{
         "title": "Assignments and GitHub",
-        "excerpt":"A note on individual learning log assignments with GitHub Within this course, you will individually submit your personal solutions for the course assignments to your personal GitHub-hosted learning log, i.e. your personal classroom repository. Don’t get confused about “your personal repository”. Once you have a GitHub account, you can create...","categories": ["01 Getting started"],
+        "excerpt":"Your course repository on GitHub Within this course, you will submit your individual solutions to one personal GitHub-hosted learning log created through Classroom 50. You will use this course repository for all assignments, even if you have other GitHub repositories. Find both invitation links in ILIAS and follow the two...","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-09_notes_on_assignments.html",
         "teaser": null
       },{
         "title": "Assignment: Hello R, Hello GitHub",
-        "excerpt":"This worksheet introduces you to R, R scripts and R Markdown. Your submission will be pushed to your class repository at GitHub. After completion, you should have gained some experience in running R commands within scripts, R Markdown for running code and documentation within one file and Git/GitHub. Things you...","categories": ["01 Getting started"],
+        "excerpt":"This worksheet introduces you to R, R scripts and R Markdown. Your submission will be pushed to your course repository on GitHub. After completion, you should have gained some experience in running R commands within scripts, R Markdown for running code and documentation within one file and Git/GitHub. Before submitting,...","categories": ["01 Getting started"],
         "tags": ["Unit","01"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit01/unit01-10_assignment.html",
         "teaser": null
@@ -194,7 +194,7 @@ var store = [{
         "title": "Overview",
         "excerpt":"Geospatial foundation models turn years of satellite observations into compact “embeddings” that summarise each location. In this unit, you will learn what embeddings are and how to use them as predictors for upscaling biodiversity.     Learning objectives   Content coming soon.   ","categories": ["06 Foundation models and satellite embeddings"],
         "tags": ["Unit","06"],
-        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_overview.html",
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_Overview.html",
         "teaser": null
       },{
         "title": "Overview",

@@ -22,10 +22,13 @@ Note that this workload is intended to achieve an average grade according to the
 ## Git and GitHub
 
 ### How do I get access to Classroom 50?
-Share your github username with the course instructors so we can add you to the classroom.
+Your instructors must add your GitHub account to the course roster. If they have not done so, share your GitHub username with them. Then follow the two [Classroom 50 setup steps](/moer-mpg-upscaling/unit00/unit00-01_learning_environment.html#classroom-50-and-github) using the links in ILIAS.
+
+### Where can I find the URL of my personal course repository?
+After completing the setup steps, open **My submission** in Classroom 50. Follow the link to your repository on GitHub and copy its URL from the **Code** menu. Use this repository for the entire course.
 
 ### How can I find out if my files were properly uploaded to the GitHub repository?
-Enter the url of your Classroom 50 repository in a web browser and check if they are there.
+Open your course repository on GitHub in a web browser and check that the files are listed there.
 
 ### How can I check if the HTML files in my GitHub repository have the right content?
 You can check the contents of your (HTML) files by downloading them from the remote repository to your local computer. 
