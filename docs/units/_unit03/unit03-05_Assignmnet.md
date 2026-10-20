@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 6
 title: "AS | Assignment"
 header:
   image: "/assets/images/teaser/ndvi.jpg"

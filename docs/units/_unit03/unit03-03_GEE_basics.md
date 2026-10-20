@@ -62,7 +62,8 @@ var cities = ['Moshi', 'Marburg']
 ```	
 * Objects: they store key-value pairs, where each value can be referred to by its key.
 ```js
-var cityData = { 'city': 'Moshi', 'coordinates': [3.3430, 37.3507], 'population_2017': 201150  };
+var cityData = { 'city': 'Moshi', 'coordinates': [37.3507, -3.3430], 'population_2017': 201150 };
+// Earth Engine uses [longitude, latitude]; south of the equator, latitude is negative
 print(cityData);
 ```
 * Writing a function: give input to do some computation and get a particular output

@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 title: "EX | Sentinel-2 Application"
 header:
   image: "/assets/images/teaser/ndvi.jpg"
@@ -11,7 +11,7 @@ In this exercise, we aim to calculate the vegetation indices for our study area.
 As a start, load your prepared Sentinel Data from the previous exercise. The vegetation indices can be calculated in GEE as well as in R.
 In this exercise we provide you the code for both platforms. Feel free to try out both. 
 
-## What are vegetation indices 
+## What are vegetation indices? 
 
 Vegetation indices in remote sensing are mathematical formulas used to analyze data from satellite or aerial imagery, mainly to assess vegetation health, coverage, and biomass. 
 These indices are a crucial tool in environmental monitoring, agriculture, and climate science. For example,
@@ -26,6 +26,7 @@ Enhanced Vegetation Index (EVI): Similar to NDVI but less sensitive to atmospher
 ## Vegetation indices using GEE
 
 ```js
+//Continue in the same script as the previous exercise.
 // Function to calculate NDVI
 function calculateNDVI(image) {
   var ndvi = image.normalizedDifference(['B8', 'B4']).rename('NDVI');
@@ -71,8 +72,7 @@ Your vegetation index may look like this example shown below. It shows the Norma
 library(terra)
 library(RStoolbox)
 
-#if you notice, images downloaded from GEE are in 4 chunks 
-# so we need to first load them and merge
+# GEE exports large images in several tiles, so we merge them first.
 
 s2_files <- list.files(path = getwd(), pattern = "^Sentinel2_FullBand.*\\.tif$", full.names = TRUE)
 mergedRaster <- terra::merge(terra::sprc(s2_files))
@@ -89,7 +89,7 @@ Index_layer <- RStoolbox::spectralIndices(mergedRaster, # see ?RStoolbox::spectr
                                           red = "B4",
                                           nir = "B8",
                                           indices = indices_to_process,
-                                          scaleFactor = 1,
+                                          scaleFactor = 1, # fine for NDVI; EVI needs scaleFactor = 10000.
                                           skipRefCheck = TRUE)
 
 

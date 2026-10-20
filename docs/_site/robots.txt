@@ -1,1 +1,1 @@
-Sitemap: https://geomoer.github.io/moer-mpg-upscaling/sitemap.xml
+Sitemap: http://localhost:4000/moer-mpg-upscaling/sitemap.xml

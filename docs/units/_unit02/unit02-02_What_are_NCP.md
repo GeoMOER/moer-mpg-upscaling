@@ -25,7 +25,7 @@ Examples of global declines in nature that have been caused by direct and indire
 Thus to address these declines in biodiversity and drivers of changes, global experts presented an innovative approach: the concept of using Nature's Contributions to People to inform policies and decisions.
 For a very long time, policies were knowledge-centric and dominated by natural sciences and economics. The unique concept of NCPs emphasizes that culture is the main link between people and nature, and it also incorporates knowledge systems of local and indigenous communities.
 
-Thus, NCPs are all the contributions including both positive and negative of the living nature. They are further categorized into a generalizing and a context-specific perspective. 
+NCPs are all the contributions including both positive and negative of the living nature. They are further categorized into a generalizing and a context-specific perspective. 
 A detailed description of this can be found in [Diaz et al 2018](https://www.science.org/doi/10.1126/science.aap8826){:target="_blank"}.   
 
 ## Additional readings

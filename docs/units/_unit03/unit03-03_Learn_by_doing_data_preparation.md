@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: "EX | Sentinel-2 Preparation"
 header:
   image: "/assets/images/teaser/ndvi.jpg"
@@ -25,8 +25,7 @@ toc: true
 1. Plot an RGB of Sentinel-2 scene for Kilimanjaro southern slope for 13 January 2022. 
    
 ```js
-// Define the study area
-var // Replace with the path of YOUR uploaded asset (see the Assets tab)
+// Define the study area – replace with the path of YOUR uploaded asset (see the Assets tab)
 var studyArea = ee.FeatureCollection('projects/YOUR-PROJECT/assets/study_area_kili');
 // Import Sentinel-2 data and filter by date and study area
 var startDate = '2022-01-13';
