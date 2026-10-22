@@ -114,7 +114,7 @@ var store = [{
         "teaser": null
       },{
         "title": "EX | Sentinel-2 Preparation",
-        "excerpt":"Things you need for this exercise A shapefile of the study area, buffered to 8000m (see below) The name of Sentinel image collection - “COPERNICUS/S2_SR_HARMONIZED” (read here) Parameters to download Sentinel-2 data (see below) A folder in your google drive to store the downloaded image Data acquisition and first steps...","categories": ["03 Remote Sensing basics"],
+        "excerpt":"Things you need for this exercise A shapefile of the study area, buffered to 8000 m (see below) The name of the Sentinel-2 image collection: “COPERNICUS/S2_SR_HARMONIZED” (read here) A folder in your Google Drive to store the exported image Step 1: Upload the study area Download the buffered shapefile for...","categories": ["03 Remote Sensing basics"],
         "tags": ["Unit","03"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit03/unit03-03_Learn_by_doing_data_preparation.html",
         "teaser": null
