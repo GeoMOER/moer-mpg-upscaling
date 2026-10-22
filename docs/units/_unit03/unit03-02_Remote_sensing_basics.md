@@ -24,5 +24,5 @@ The online resources for this unit can be found [here](https://geomoer.github.io
 
 2) Which bands are needed for the calculation of EVI, SAVI, and MSI?
 
-3) Should we use the R packages sp, raster, sf, stars, or terra? 
+3) 3) Sentinel-2 passes over Kilimanjaro every 5 days, yet finding a cloud-free image is surprisingly hard. Why? And in which months would you go hunting for one?
   
