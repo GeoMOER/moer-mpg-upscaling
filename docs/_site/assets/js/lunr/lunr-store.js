@@ -150,7 +150,7 @@ var store = [{
         "teaser": null
       },{
         "title": "EX | Deriving LiDAR products",
-        "excerpt":"Exercise: LiDAR products In this exercise, we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model). source:[earthdatascience.org](https://www.earthdatascience.org/){:target=\"_blank\"} ## Rasterizing the point cloud Since the point clouds are 3D, to get DTM, DSM and CHM, we need some sort...","categories": ["04 LiDAR Remote Sensing"],
+        "excerpt":"Exercise: LiDAR products In this exercise, we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model). Image source: earthdatascience.org Rasterizing the point cloud Since the point clouds are 3D, to get DTM, DSM and CHM, we need some...","categories": ["04 LiDAR Remote Sensing"],
         "tags": ["Unit","04"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit04/unit04-04_LiDAR_metrics.html",
         "teaser": null
@@ -192,9 +192,33 @@ var store = [{
         "teaser": null
       },{
         "title": "Overview",
-        "excerpt":"Geospatial foundation models turn years of satellite observations into compact “embeddings” that summarise each location. In this unit, you will learn what embeddings are and how to use them as predictors for upscaling biodiversity.     Learning objectives   Content coming soon.   ","categories": ["06 Foundation models and satellite embeddings"],
+        "excerpt":"Geospatial foundation models turn years of satellite observations into compact “embeddings” that summarise each location. In this unit, you will learn what embeddings are, how they differ from the spectral bands and indices you have used so far, and how to use AlphaEarth embeddings as predictors for upscaling biodiversity on...","categories": ["06 Foundation models and satellite embeddings"],
         "tags": ["Unit","06"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-01_overview.html",
+        "teaser": null
+      },{
+        "title": "LM | Foundation models and satellite embeddings",
+        "excerpt":"Why a new kind of remote sensing data? In the previous units you worked with three very different data sources: Sentinel-2 (Unit 03): you filtered scenes by date, dealt with clouds, and calculated vegetation indices such as NDVI. LiDAR (Unit 04): you normalised point clouds and derived structural metrics such...","categories": ["06 Foundation models and satellite embeddings"],
+        "tags": ["Unit","06"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-02_Foundation_models_and_embeddings.html",
+        "teaser": null
+      },{
+        "title": "EX | Exploring AlphaEarth embeddings",
+        "excerpt":"In this exercise, we load the AlphaEarth satellite embeddings for the southern slopes of Kilimanjaro, look at them on the map, and use them to find places that are similar to one of our plots. Things you need for this exercise Your study area asset from the Sentinel-2 exercise (e.g....","categories": ["06 Foundation models and satellite embeddings"],
+        "tags": ["Unit","06"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-03_Exploring_AlphaEarth_embeddings.html",
+        "teaser": null
+      },{
+        "title": "EX | Extracting embeddings for the plots",
+        "excerpt":"In this exercise, we extract the mean embedding for each Kilimanjaro plot, export it as a table, and take a first look at it in R. This table becomes an extra set of predictors for the upscaling workflow in Unit 08. Step 1: Extract the embeddings for all plots in...","categories": ["06 Foundation models and satellite embeddings"],
+        "tags": ["Unit","06"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-04_Extracting_embeddings_for_plots.html",
+        "teaser": null
+      },{
+        "title": "AS | Assignment",
+        "excerpt":"Do the exercises in this unit. Extract the AlphaEarth embeddings for all plots and save them as plot_embeddings_&lt;year&gt;.csv. Commit your GEE script (copy it into a .js file) and your R script to your GitHub classroom repository. Include the PCA plot from the exercise in an R Markdown (html) document....","categories": ["06 Foundation models and satellite embeddings"],
+        "tags": ["Unit","06"],
+        "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-05_Assignment.html",
         "teaser": null
       },{
         "title": "Overview",

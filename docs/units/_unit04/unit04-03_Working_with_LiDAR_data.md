@@ -20,7 +20,7 @@ You can download the example point cloud data [here](https://next.hessenbox.de/i
 
 ## Input/Output, Clipping and Visualizing point clouds
 
-This following code shows you a simple input/output command and lidR::clip_roi(), which is similar to raster::crop and a simple 3D visualization.
+This following code shows you a simple input/output command and `lidR::clip_roi()` (similar to `terra::crop()` for rasters) and a simple 3D visualization.
 
 ```r
 # load the following libraries
@@ -43,11 +43,11 @@ class(point_cloud) #"LAS"
 st_crs(point_cloud) <- 32737 # WGS 84 , UTM37S
 
 # crop out study area
-flm1 <- clip_roi(point_cloud,aoi) #function 'lasclip' has been deprecated
+flm1 <- clip_roi(point_cloud, aoi)
 
 # have a look at Lidar data structure
 head(flm1@data)
-       X       Y        Z    Intensity ReturnNumber NumberOfReturns ScanDirectionFlag EdgeOfFlightline Classification Synthetic_flag Keypoint_flag Withheld_flag ScanAngleRank UserData PointSourceID
+#       X       Y        Z    Intensity ReturnNumber NumberOfReturns ScanDirectionFlag EdgeOfFlightline Classification Synthetic_flag Keypoint_flag Withheld_flag ScanAngleRank UserData PointSourceID
 # 303983.1 9649715 1903.269         0            3               3                 0                0              2          FALSE         FALSE         FALSE            -5        0             0
 # 303983.1 9649715 1903.400         0            6               6                 0                0              0          FALSE         FALSE         FALSE            -5        0             0
 

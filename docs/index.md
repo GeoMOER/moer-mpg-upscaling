@@ -58,27 +58,26 @@ The course encompasses 13 sessions from 16.10.2026 to 12.02.2027.
 | Session | Date | Topic | Content |
 |---------|------|-------|---------|
 ||| **Getting started** |
-| 01 | 16.10.2026   | First things first                                        | Course introduction, R Basics, GitHub, Classroom 50 |
-||| **Remote sensing basics and data**  |
-| 02 | 23.10.2026   | Remote sensing basics and Sentinel-2 data                 |Introduction to Kili-SES project, Remote sensing basics, Google Earth Engine basics, Sentinel-2 data preparation and application|
-| 03 | 30.10.2026   | LiDAR remote sensing          	                        |Introduction to LiDAR, working with point clouds and deriving LiDAR products|
-| 04 | 06.11.2026   | Hyperspectral remote sensing       			|Introduction to hyperspectral data, speclibs and deriving vegetation indices|
-| 05 | 13.11.2026 | Foundation models and satellite embeddings | What foundation models and embeddings are, AlphaEarth and TESSERA, embeddings vs. spectral bands and indices, limitations |
-| 06 | 20.11.2026 | Hands-on AlphaEarth satellite embeddings | Accessing AlphaEarth embeddings in Google Earth Engine, exploring and extracting them for the Kilimanjaro plots, comparison with classic predictors |
-||| **Start research project**  |
-| 07 | 27.11.2026   | Set up your research project      		        | Defining project work, research questions and discussing deadlines, open science and data |
-||| **Upscaling Methodology**                                                   |	
-| 08 | 04.12.2026 | Upscaling workflow 1                                        | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
+| [01](/moer-mpg-upscaling/unit01/unit01-01_first_things_first.html) | 16.10.2026 | First things first | Course introduction, R Basics, GitHub, Classroom 50 |
+||| **Remote sensing basics and data** |
+| [02](/moer-mpg-upscaling/unit03/unit03-01_overview.html) | 23.10.2026 | Remote sensing basics and Sentinel-2 data | [Introduction to Kili-SES project](/moer-mpg-upscaling/unit02/unit02-01_Introduction_Kili_SES.html), Remote sensing basics, Google Earth Engine basics, Sentinel-2 data preparation and application |
+| [03](/moer-mpg-upscaling/unit04/unit04-01_overview.html) | 30.10.2026 | LiDAR remote sensing | Introduction to LiDAR, working with point clouds and deriving LiDAR products |
+| [04](/moer-mpg-upscaling/unit05/unit05-01_overview.html) | 06.11.2026 | Hyperspectral remote sensing | Introduction to hyperspectral data, speclibs and deriving vegetation indices |
+| [05](/moer-mpg-upscaling/unit06/unit06-02_Foundation_models_and_embeddings.html) | 13.11.2026 | Foundation models and satellite embeddings | What foundation models and embeddings are, AlphaEarth and TESSERA, embeddings vs. spectral bands and indices, limitations |
+| [06](/moer-mpg-upscaling/unit06/unit06-03_Exploring_AlphaEarth_embeddings.html) | 20.11.2026 | Hands-on AlphaEarth satellite embeddings | Accessing AlphaEarth embeddings in Google Earth Engine, exploring and extracting them for the Kilimanjaro plots, comparison with classic predictors |
+||| **Start research project** |
+| [07](/moer-mpg-upscaling/unit07/unit07-01_Overview.html) | 27.11.2026 | Set up your research project | Defining project work, research questions and discussing deadlines, open science and data |
+||| **Upscaling Methodology** |
+| [08](/moer-mpg-upscaling/unit08/unit08-01_Overview.html) | 04.12.2026 | Upscaling workflow 1 | What is upscaling, understanding the workflow, data preparation, basics of machine learning models |
 ||| **No sessions on 11.12. and 18.12.2026 – work on your project outline** |
-||| **Christmas Break**                                                         |
-| 09 | 15.01.2027 | Upscaling workflow 2 	                            	| Designing a machine learning model, testing and fine tuning the model |	
-| 10 | 22.01.2027 | Upscaling workflow 3	                            	| Upscaling : doing predictions |
+||| **Christmas Break** |
+| [09](/moer-mpg-upscaling/unit08/unit08-06_machine_learning_models.html) | 15.01.2027 | Upscaling workflow 2 | Designing a machine learning model, testing and fine tuning the model |
+| [10](/moer-mpg-upscaling/unit08/unit08-07_model_predictions.html) | 22.01.2027 | Upscaling workflow 3 | Upscaling: doing predictions |
 ||| **Assisted working phase** |
-| 11 | 29.01.2027   | Feedback on project outline and Work on projects 		| Discussion on project outlines and time for working on projects|
-| 12 | 05.02.2027   | Work on your projects                                     | Time for working on projects, individual feedback |
+| [11](/moer-mpg-upscaling/unit07/unit07-03_Project_outline.html) | 29.01.2027 | Feedback on project outline and Work on projects | Discussion on project outlines and time for working on projects |
+| [12](/moer-mpg-upscaling/unit07/unit07-04_Final_project.html) | 05.02.2027 | Work on your projects | Time for working on projects, individual feedback |
 ||| **Wrap up** |
-| 13 | 12.02.2027   | Work on your projects, wrap up, evaluation, and feedback  | Time for questions and feedback, goodbye |
-
+| [13](/moer-mpg-upscaling/unit07/unit07-04_Final_project.html) | 12.02.2027 | Work on your projects, wrap up, evaluation, and feedback | Time for questions and feedback, goodbye |
 
 # Deliverables
 

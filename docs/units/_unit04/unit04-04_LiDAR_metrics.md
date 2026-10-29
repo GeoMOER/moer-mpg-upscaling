@@ -12,7 +12,7 @@ toc: true
 In this exercise, we want to derive the most common LiDAR products DTM (Digital Terrain Model), DSM (Digital Surface Model) and CHM (Canopy Height Model).
 
 <img src="lidarTree-height.png" width="1104" height="359" align="centre" vspace="10" hspace="20">
-<font size="-1">source:[earthdatascience.org](https://www.earthdatascience.org/){:target="_blank"}
+<i>Image source: [earthdatascience.org](https://www.earthdatascience.org/){:target="_blank"}</i>
 
 ## Rasterizing the point cloud
 
