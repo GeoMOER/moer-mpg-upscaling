@@ -39,7 +39,6 @@ Let's look at the example below to understand a plant spectrum.
 Reflectance spectra of different types of green vegetation compared to a spectral signature for senescent leaves.
 Image: Govender et al. (2007), reproduced in [Adão et al. 2017](https://www.mdpi.com/2072-4292/9/11/1110#){:target="_blank"}.
 
-
 ## Multispectral vs Hyperspectral
 
 <table>

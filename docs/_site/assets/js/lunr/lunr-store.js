@@ -168,7 +168,7 @@ var store = [{
         "teaser": null
       },{
         "title": "LM | Hyperspectral Remote Sensing",
-        "excerpt":"In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data. Introduction to Hyperspectral Remote Sensing The EM Spectrum The EM spectrum consists of a range of all types of electromagnetic radiation. Surface reflectance at different parts of the spectrum or...","categories": ["05 Hyperspectral Remote Sensing"],
+        "excerpt":"In this unit we introduce Hyperspectral Remote Sensing followed by a practical exercise on deriving useful information from spectral data. The EM Spectrum The EM spectrum consists of a range of all types of electromagnetic radiation. Surface reflectance at different parts of the spectrum or wavelengths are used for identification...","categories": ["05 Hyperspectral Remote Sensing"],
         "tags": ["Unit","05"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit05/unit05-02_Hyperspectral_Remote_Sensing.html",
         "teaser": null
@@ -204,7 +204,7 @@ var store = [{
         "teaser": null
       },{
         "title": "EX | Exploring AlphaEarth embeddings",
-        "excerpt":"In this exercise, we load the AlphaEarth satellite embeddings for the southern slopes of Kilimanjaro, look at them on the map, and use them to find places that are similar to one of our plots. Things you need for this exercise Your study area asset from the Sentinel-2 exercise (e.g....","categories": ["06 Foundation models and satellite embeddings"],
+        "excerpt":"In this exercise, we load the AlphaEarth satellite embeddings for the southern slopes of Kilimanjaro, look at them on the map, and use them to find places that are similar to one of our plots. Finally, we check our results against the land-use map. We go slowly: every step introduces...","categories": ["06 Foundation models and satellite embeddings"],
         "tags": ["Unit","06"],
         "url": "http://localhost:4000/moer-mpg-upscaling/unit06/unit06-03_Exploring_AlphaEarth_embeddings.html",
         "teaser": null

@@ -36,7 +36,37 @@ The key idea is **similarity**:
 * Places with **similar embeddings** look and behave alike (for example, two coffee plantations at similar elevations).
 * Places with **very different embeddings** are different (for example, a coffee plantation and a montane forest).
 
-Because each embedding is just a vector of numbers, we can compare locations with simple maths. For unit-length vectors, the **dot product** of two embeddings tells us how similar they are: values close to 1 mean very similar, lower values mean less similar.
+Because each embedding is just a list of numbers, we can compare locations with simple maths: the **dot product**.
+
+### How do we measure similarity? The dot product
+
+An embedding usually describes each pixel with many numbers (the model you will meet below uses 64). To understand the idea, imagine we described a place with just **two** numbers, for example "how green" and "how wet":
+
+| Place | Green | Wet |
+|---|---|---|
+| A: montane forest | 0.8 | 0.6 |
+| B: homegarden | 0.6 | 0.8 |
+| C: dry savanna | 0.6 | −0.8 |
+
+To compare two places, **multiply the matching numbers and add the results**:
+
+* **A · B** = 0.8 × 0.6 + 0.6 × 0.8 = 0.48 + 0.48 = **0.96** → very similar
+* **A · C** = 0.8 × 0.6 + 0.6 × (−0.8) = 0.48 − 0.48 = **0** → not similar
+
+If two places score high on the *same* things, the products are large and the sum is large. If one place is high where the other is low, the products cancel out.
+
+Embeddings are often scaled so that all of them have the **same size** (a "length" of 1, also called **unit length**). Then the dot product only compares *how* two places are composed, not how large their numbers are, and the result is easy to read:
+
+| Dot product | Meaning |
+|---|---|
+| close to **1** | very similar places |
+| around **0** | unrelated places |
+| negative | very different places |
+
+**Think of it like comparing two people's taste in films:** if both love the same films and dislike the same films, they are a good match. The dot product does the same with places. It compares all 64 numbers at once and gives one similarity score.
+{: .notice--info}
+
+You will use the dot product in the hands-on exercise to make a **similarity map**: pick one plot, and see which places on Kilimanjaro look most like it.
 
 Embeddings can then be used like any other predictor: in classification, regression, clustering, or change detection. This is why they are interesting for our upscaling workflow.
 
@@ -57,7 +87,7 @@ The resulting **Satellite Embedding dataset** is available in Google Earth Engin
 | Spatial resolution | 10 m |
 | Temporal resolution | one layer per year, from 2017 onwards |
 | Bands | 64 bands, named `A00` to `A63` |
-| Values | between -1 and 1; each pixel vector has length 1 |
+| Values | between -1 and 1; each pixel vector has unit length (see the dot product section above) |
 | Licence | CC-BY 4.0 |
 
 So instead of 13 Sentinel-2 bands for one date, you get 64 numbers per 10 m pixel that summarise a whole year from many sensors. Clouds and data gaps are already handled by the model.
