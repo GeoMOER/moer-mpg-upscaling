@@ -19,15 +19,38 @@ Continue in the script from the previous exercise. There we calculated the finge
 
 Each plot is 50 m × 50 m and covers about 25 embedding pixels. Before we average them, we add two classic predictors as extra bands, so everything is extracted in one go.
 
+Elevation is easy. NDVI needs more care on Kilimanjaro:
+
+Kilimanjaro's montane forest lies in a **cloud belt**: between about 2000 and 3000 m, it is cloudy on most days of the year. A normal median image of a year still contains many clouds there, and clouds have an NDVI close to 0. So we do it in three steps:
+
+1. **Remove cloud pixels** in every image.
+2. **Calculate NDVI** for every image.
+3. **Keep the greenest values**: the 90th percentile of all NDVI values of the year.
+
 ```js
-// NDVI from a cloud-free Sentinel-2 median of 2022
+// 1. A function that removes cloud pixels from one Sentinel-2 image
+function maskClouds(img) {
+  var scl = img.select('SCL');                          // scene classification band
+  var clear = scl.eq(4).or(scl.eq(5)).or(scl.eq(6));    // 4 = vegetation, 5 = bare soil, 6 = water
+  return img.updateMask(clear);                         // everything else is hidden
+}
+
+// 2. A function that calculates NDVI for one image
+function addNDVI(img) {
+  return img.normalizedDifference(['B8', 'B4']).rename('NDVI');   // (NIR - Red) / (NIR + Red)
+}
+
+// 3. Peak-greenness NDVI of 2022
 var ndvi = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
              .filterDate('2022-01-01', '2023-01-01')
              .filterBounds(studyArea)
-             .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
-             .median()
-             .normalizedDifference(['B8', 'B4'])   // (NIR - Red) / (NIR + Red)
+             .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 70))
+             .map(maskClouds)                         // remove cloud pixels
+             .map(addNDVI)                            // NDVI per image
+             .reduce(ee.Reducer.percentile([90]))     // keep the greenest values
              .rename('NDVI');
+
+Map.addLayer(ndvi, {min: 0, max: 0.9, palette: ['brown', 'yellow', 'green']}, 'NDVI p90');
 
 // Elevation from the SRTM digital elevation model (30 m)
 var elevation = ee.Image('USGS/SRTMGL1_003').rename('elevation');
@@ -38,9 +61,33 @@ var predictors = embeddings.addBands(ndvi).addBands(elevation);
 
 | Command | What it does |
 |---|---|
+| `img.select('SCL')` | Every Sentinel-2 surface reflectance image has a **Scene Classification Layer** (SCL). It labels each pixel, for example 4 = vegetation, 8 and 9 = cloud, 3 = cloud shadow. |
+| `scl.eq(4).or(scl.eq(5)).or(scl.eq(6))` | `eq` = "equals". The result is 1 where the pixel is vegetation, bare soil or water, and 0 everywhere else. |
+| `img.updateMask(clear)` | Hides all pixels where `clear` is 0, so clouds, shadows and snow are ignored in the next steps. |
+| `.map(function)` | Applies a function to **every image** in the collection, one after another. |
+| `CLOUDY_PIXEL_PERCENTAGE < 70` | We now allow cloudier scenes, because the cloud pixels are removed anyway. That leaves more clear pixels per location. |
 | `.normalizedDifference(['B8', 'B4'])` | Calculates NDVI for every pixel, as in Unit 03. |
+| `ee.Reducer.percentile([90])` | For every pixel, sorts all NDVI values of the year and takes the value that 90 % of them are below. This is the **peak greenness** of the year. Any clouds the mask missed have low NDVI and are ignored. |
 | `ee.Image('USGS/SRTMGL1_003')` | Loads a global elevation model from the Earth Engine catalogue. It has one band, which we rename to `elevation`. |
 | `.addBands(...)` | Adds the bands of another image. Our image now has 64 + 2 = 66 bands. |
+
+**Why not simply `.median()`?** We tried that first. With a median image and a 20 % cloud filter, the forest plots got NDVI values of 0.03–0.3, which is unrealistic for a closed forest. The filter only removes very cloudy **scenes**; the clouds inside the remaining scenes stay. In the cloud belt, these clouds pulled the median down. Coffee plots below the cloud belt looked fine, which is a good hint that the problem was clouds and not the vegetation.
+{: .notice--warning}
+
+<details markdown="1">
+<summary><b>Show the NDVI values we got with both methods</b></summary>
+
+| Land use | Median NDVI: simple median | Median NDVI: cloud mask + 90th percentile |
+|---|---|---|
+| flm (lower montane forest) | 0.56 | 0.85 |
+| foc (*Ocotea* forest) | 0.25 | 0.74 |
+| fpo (*Podocarpus* forest) | 0.18 | 0.76 |
+| cof (coffee) | 0.76 | 0.83 |
+| sav (savanna) | 0.39 | 0.65 |
+| hel (*Helichrysum*) | 0.06 | 0.12 |
+
+The forest values changed the most. Notice that disturbed forest and disturbed *Erica* (fpd 0.69, fed 0.30) are now less green than the intact types (fpo 0.76, fer 0.53).
+</details>
 
 ### 1b. Mean values for every plot
 
@@ -267,11 +314,13 @@ ggplot(scores, aes(elevation, PC1, colour = zone)) +
   geom_point(size = 3) +
   theme_minimal() +
   labs(x = "Elevation (m)", y = "PC1", colour = "Zone")
+ggsave("pc1_elevation.png", width = 7, height = 5, dpi = 150)
 
 ggplot(scores, aes(NDVI, PC2, colour = zone)) +
   geom_point(size = 3) +
   theme_minimal() +
   labs(x = "NDVI", y = "PC2", colour = "Zone")
+ggsave("pc2_ndvi.png", width = 7, height = 5, dpi = 150)
 
 # correlation of each single embedding band with NDVI
 cors <- sapply(emb_cols, function(b) cor(emb[[b]], emb$NDVI))
@@ -285,6 +334,13 @@ head(sort(abs(cors), decreasing = TRUE), 5)
 | `cor(x, y)` | The correlation between two variables: close to 1 or −1 = strong relationship, close to 0 = no linear relationship. |
 | `sapply(emb_cols, function(b) ...)` | Repeats the correlation for every one of the 64 bands and collects the results. |
 | `sort(abs(cors), decreasing = TRUE)` | Sorts the bands by the strength of the correlation, ignoring the sign. |
+| `ggsave(...)` | Saves the last plot as an image file. `width` and `height` are in inches. |
+
+<img src="pc1_elevation.png" width="800" align="centre" vspace="10" hspace="20">
+<i>PC1 of the embeddings plotted against the elevation of the plots.</i>
+
+<img src="pc2_ndvi.png" width="800" align="centre" vspace="10" hspace="20">
+<i>PC2 of the embeddings plotted against the peak-greenness NDVI of 2022.</i>
 
 **Questions:**
 * Is PC1 strongly related to elevation, and PC2 to NDVI? Does that confirm the interpretation from Step 3?
@@ -293,12 +349,34 @@ head(sort(abs(cors), decreasing = TRUE), 5)
 {: .notice--info}
 
 <details markdown="1">
-<summary><b>Show hints for the answers</b></summary>
+<summary><b>Show what PC1 and PC2 mean</b></summary>
 
-* If the correlations are strong (for example above 0.7 or below −0.7), the main axes of the embeddings reflect gradients we already know. That is an **indirect way to explain** what the embeddings capture, and a good answer to the reviewer question from the discussion.
-* A single band can correlate strongly with NDVI. But that does **not** mean this band "is" NDVI or measures greenness. Bands have no physical meaning, and the same information is spread across many bands.
-* Embeddings combine many sensors and a **whole year**: seasonal changes, radar information on structure and moisture, and LiDAR information on canopy height. A single NDVI value from a median image contains none of this.
+Our results:
+
+| | r | r² | Meaning |
+|---|---|---|---|
+| PC1 vs elevation | −0.96 | 0.92 | 92 % of the variation along PC1 is explained by elevation |
+| PC2 vs NDVI | 0.77 | 0.60 | 60 % of PC2 is explained by NDVI; 40 % is something else |
+
+`r²` is simply `r` squared: the share of the variation that one variable explains in the other.
+
+**PC1 ≈ elevation.** The plots line up almost perfectly from the lowlands (≈ 1000 m) through coffee and montane forest up to the *Erica* and *Helichrysum* zone (≈ 4000 m). The model never received elevation data: it learned Kilimanjaro's vegetation belts from the satellite images alone. The minus sign has no meaning, because a PCA axis can point in either direction.
+
+**PC2 ≈ greenness, but not only.** Greener plots tend to have a higher PC2. But look at NDVI ≈ 0.7: savanna plots have a low PC2 (about −0.4), while montane forest plots have a high PC2 (about +0.2). They are equally green, yet the embeddings separate them clearly. PC2 is better described as **closed, woody canopy vs. open vegetation**, information that NDVI alone cannot see.
+
+This confirms the interpretation from Step 3.
 </details>
+
+<details markdown="1">
+<summary><b>Show hints for the other questions</b></summary>
+
+* Strong correlations like these show that the main axes of the embeddings reflect gradients we already know. That is an **indirect way to explain** what the embeddings capture, and a good answer to the reviewer question from the discussion.
+* A single band can correlate strongly with NDVI. But that does **not** mean this band "is" NDVI or measures greenness. Bands have no physical meaning, and the same information is spread across many bands.
+* Embeddings combine many sensors and a **whole year**: seasonal changes, radar information on structure and moisture, and LiDAR information on canopy height. A single NDVI value contains none of this.
+</details>
+
+**Did you know?** With a simple median image, our forest plots had NDVI values of 0.03–0.3 because of the cloud belt, but the embeddings separated the forest plots perfectly even then. AlphaEarth combines many images over the year and also uses **radar** (Sentinel-1), which sees through clouds. For cloudy mountains like Kilimanjaro, this is a real advantage over optical indices.
+{: .notice--success}
 
 **Did you know?** In the upscaling units, you will be able to compare three models: one with classic predictors (NDVI, elevation, …), one with embeddings only, and one with both. This exercise is the first step towards that comparison.
 {: .notice--success}
