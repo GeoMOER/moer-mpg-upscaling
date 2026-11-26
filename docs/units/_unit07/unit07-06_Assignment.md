@@ -7,10 +7,10 @@ header:
 toc: true
 ---
 
-* Pick one particular Biodiversity / NCP indicator that you would like to upscale.Go through hessenbox or Bhandari et al., 2026 to get some inspiration.
+* Pick one particular Biodiversity / NCP indicator that you would like to upscale. Go through hessenbox or [Bhandari et al., 2026](https://iopscience.iop.org/article/10.1088/1748-9326/ae45bd){:target="_blank"} to get some inspiration.
 * Write a short 50-100 word justification as to why your picked indicator could be useful to science/policy/conservation/human wellbeing.
 * In next class, discuss with everyone what is your choice and what data do you need for it. 
-* Reminder - Submit your Project outline by 18 January 2027 at 23:00. Final project deadline - 28 February 2027 at 23:00
+* Reminder - Submit your project outline by 18 January 2027 at 23:00. Final project deadline - 28 February 2027 at 23:00
 
 References of interest
 * [Bhandari et al., 2026](https://iopscience.iop.org/article/10.1088/1748-9326/ae45bd){:target="_blank"}
